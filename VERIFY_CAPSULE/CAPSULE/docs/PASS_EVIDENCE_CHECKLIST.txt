@@ -1,0 +1,145 @@
+PASS_EVIDENCE_CHECKLIST
+
+Every SSIL demo PASS must include deterministic replay evidence.
+
+Conformance is binary.
+
+1. Canonical Profile (If Claiming Official Conformance)
+
+The canonical verification profile locks:
+
+H = 8
+delta-max = 0.15
+s-max = 10.0
+rho = 1.0
+
+Only this profile produces official canonical fingerprints.
+
+2. Required Replay Condition
+
+Two independent executions under identical inputs and identical parameters must produce:
+
+B_A = B_B
+
+Meaning:
+
+SHA256(run1.csv) == SHA256(run2.csv)
+
+Byte identity is mandatory.
+No tolerance is permitted.
+
+3. Minimum Required Evidence (Manual Replay Path)
+
+If performing manual replay (outside capsule), evidence must include:
+
+Two independent output files
+run1.csv
+run2.csv
+
+Binary comparison result showing:
+
+no differences encountered
+
+SHA-256 hashes for both outputs
+
+Proof that:
+
+SHA256(run1.csv) == SHA256(run2.csv)
+
+If claiming canonical profile verification:
+
+Record the canonical fingerprint:
+
+CANONICAL_SHA256(run1.csv) = <official_hash>
+
+4. Trace-Level Coverage (Demo Scope)
+
+The ssil-demo repository includes three deterministic cases:
+
+Baseline case
+Input: traces/trace_demo.csv
+
+EdgeZero case
+Input: traces/trace_edgezero.csv
+
+Recovery window case
+Input: traces/trace_recovery3.csv
+
+Each case must satisfy replay identity independently.
+
+5. Reference Outputs (Frozen Evidence)
+
+The following frozen artifacts exist under:
+
+reference_outputs/
+
+Baseline
+baseline_run1.csv
+baseline_run2.csv
+
+EdgeZero
+edgezero_run1.csv
+edgezero_run2.csv
+
+Recovery
+recovery3_run.csv
+
+Each has corresponding SHA-256 seal files.
+
+These serve as audit references only.
+They do not replace independent replay verification.
+
+6. Authoritative Verification Method (Preferred)
+
+The authoritative verification path is the included capsule:
+
+VERIFY_CAPSULE\RUN_VERIFY.bat
+
+Expected result:
+
+SSIL_CAPSULE_RESULT: PASS
+
+The capsule verifies:
+
+Replay identity
+Canonical parameter lock
+Canonical fingerprint match
+Environment normalization
+Deterministic profile immutability
+
+If replay identity fails:
+
+SSIL_CAPSULE_RESULT: FAIL
+
+No partial success is possible.
+
+7. Structural Requirements (Non-Negotiable)
+
+All PASS claims must satisfy:
+
+Finite irreversibility grammar
+R = {R0, E0, I1, I2, C}
+
+Conservative invariant
+phi((m,a,s,r)) = m
+
+Bounded horizon
+W_H(t) = {t-H+1, ..., t}
+
+Deterministic continuation mapping
+IRR_ADM(t) ∈ {CONTINUE, ABSTAIN}
+
+Replay identity
+B_A = B_B
+
+8. Deterministic Discipline
+
+No randomness
+No probabilistic inference
+No adaptive thresholds
+No timestamp embedding
+No environment-dependent mutation
+
+If any of these occur, PASS is invalid.
+
+End of checklist.

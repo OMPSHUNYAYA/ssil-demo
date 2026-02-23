@@ -1,0 +1,286 @@
+⭐ Shunyaya Structural Irreversibility Layer (SSIL)
+
+Quickstart — ssil-demo Observatory
+
+Deterministic • Replay-Verifiable • Conservative Governance
+No Equation Modification • No Prediction • No Probabilistic Layer
+
+1. What This Repository Is
+
+This ssil-demo folder is an executable SSIL observatory.
+
+It allows you to:
+
+Execute the SSIL engine
+
+Observe finite irreversibility classification
+
+Verify deterministic replay identity
+
+Confirm conservative magnitude preservation
+
+Validate canonical conformance fingerprints
+
+This repository is self-contained.
+
+No external services required.
+No internet required.
+No external dependencies required.
+
+2. What SSIL Does — and Does Not Do
+
+SSIL does not:
+
+Modify classical magnitude equations
+
+Modify thermodynamics or domain physics
+
+Predict collapse or failure
+
+Inject control logic
+
+Perform optimization
+
+Use machine learning
+
+Use probabilistic inference
+
+Adapt thresholds dynamically
+
+SSIL overlays a deterministic irreversibility governance layer.
+
+It:
+
+Classifies irreversibility posture deterministically
+
+Evaluates bounded structural recovery
+
+Detects irreversible boundary crossing (EdgeZero)
+
+Governs continuation admissibility
+
+Preserves magnitude exactly
+
+Produces replay-verifiable artifacts
+
+3. Core Invariant (Non-Negotiable)
+
+Conservative collapse mapping:
+
+phi((m,a,s,r)) = m
+
+Where:
+
+m = classical magnitude (unchanged)
+a = structural alignment
+s = accumulated posture
+r ∈ {R0, E0, I1, I2, C}
+
+Magnitude is never altered.
+
+4. Requirements
+
+Python 3.9+ (CPython recommended)
+
+Standard library only
+
+Offline-capable execution
+
+Deterministic environment
+
+No randomness.
+No statistical inference.
+No adaptive thresholds.
+
+All verification must satisfy:
+
+B_A = B_B
+
+Byte-identical replay identity.
+
+5. Repository Layout (ssil-demo)
+
+ssil-demo/
+│
+├── README.md
+├── LICENSE
+├── RUN_ALL.bat
+├── RUN_DEMO.bat
+│
+├── docs/
+│ ├── FAQ.md
+│ ├── SSIL-Conformance-Specification.md
+│ ├── SSIL-Structural-Irreversibility-Model.md
+│ ├── SSIL-Structural-Irreversibility-Topology-Diagram.png
+│ ├── SSIL_DEMO_EXECUTION_SPEC.md
+│ ├── SSIL_KILLER_DEMO_SPEC.md
+│ ├── SSIL_MIN_ADAPTER_SPEC.md
+│ ├── CASE_INDEX.md
+│ ├── CASE_EDGEZERO_NOTE.md
+│ ├── CASE_RECOVERY_WINDOW_NOTE.md
+│ └── PASS_EVIDENCE_CHECKLIST.md
+│
+├── engine/
+│ └── ssil_engine_v1_2.py
+│
+├── traces/
+│ ├── trace_demo.csv
+│ ├── trace_edgezero.csv
+│ └── trace_recovery3.csv
+│
+├── reference_outputs/
+│ ├── baseline_run1.csv
+│ ├── baseline_run1.csv.sha256.txt
+│ ├── baseline_run2.csv
+│ ├── baseline_run2.csv.sha256.txt
+│ ├── edgezero_run1.csv
+│ ├── edgezero_run1.csv.sha256.txt
+│ ├── edgezero_run2.csv
+│ ├── edgezero_run2.csv.sha256.txt
+│ ├── recovery3_run.csv
+│ ├── recovery3_run.csv.sha256
+│ └── README.md
+│
+└── VERIFY_CAPSULE/
+├── BUILD_MANIFEST.bat
+├── RUN_VERIFY.bat
+├── MANIFEST.sha256
+├── VERIFY_RESULT.txt
+└── CAPSULE/ (frozen verification archive)
+
+This structure is intentionally self-contained and replay-stable.
+
+6. Official Verification (Recommended)
+
+From the ssil-demo root:
+
+VERIFY_CAPSULE\RUN_VERIFY.bat
+
+Expected result:
+
+SSIL_CAPSULE_RESULT: PASS
+
+The capsule verifies:
+
+Replay identity (B_A = B_B)
+
+Canonical fingerprint match
+
+Locked deterministic profile
+
+No formatting drift
+
+No parameter mutation
+
+No environment deviation
+
+If fingerprint mismatch occurs:
+
+SSIL_CAPSULE_RESULT: FAIL
+
+No tolerance.
+No partial acceptance.
+Byte identity required.
+
+7. Demo Execution (Manual Mode)
+
+To run the canonical demo irreversibility trace:
+
+RUN_DEMO.bat
+
+Or manually (canonical profile):
+
+python engine\ssil_engine_v1_2.py --in traces\trace_demo.csv --out reference_outputs\manual_run.csv --H 8 --delta-max 0.15 --s-max 10.0 --rho 1.0
+
+To test replay identity:
+
+Run twice with identical parameters:
+
+fc /b run1.csv run2.csv
+
+Replay identity succeeds only if:
+
+no differences encountered
+
+Then verify SHA-256:
+
+certutil -hashfile run1.csv SHA256
+
+8. Canonical Profile (Locked)
+
+The canonical verification profile (used in reference_outputs and VERIFY_CAPSULE) locks:
+
+H = 8
+delta-max = 0.15
+s-max = 10.0
+rho = 1.0
+
+Only this profile produces the official conformance fingerprints.
+
+All other parameter choices remain deterministic,
+but are considered illustration profiles.
+
+9. Structural Model Summary
+
+Finite irreversibility regime set:
+
+R = {R0, E0, I1, I2, C}
+
+Bounded horizon:
+
+W_H(t) = {t-H+1, ..., t}
+
+Continuation mapping:
+
+IRR_ADM(t) ∈ {CONTINUE, ABSTAIN}
+
+Conservative collapse:
+
+phi((m,a,s,r)) = m
+
+SSIL governs continuation — not magnitude.
+
+10. Deterministic Replay Rule
+
+Two independent executions under identical inputs must produce:
+
+B_A = B_B
+
+Replay identity is authoritative proof of conformance.
+
+11. What SSIL Is Not
+
+SSIL does not:
+
+Replace thermodynamics
+
+Predict cascade failure
+
+Forecast market events
+
+Simulate mechanical breakdown
+
+Inject control signals
+
+Guarantee safety
+
+It governs structural continuation admissibility only.
+
+12. Final Summary
+
+Shunyaya Structural Irreversibility Layer (SSIL):
+
+Introduces a deterministic finite irreversibility grammar
+
+Preserves classical magnitude via phi((m,a,s,r)) = m
+
+Governs continuation through IRR_ADM(t)
+
+Requires exact replay equivalence B_A = B_B
+
+Enforces canonical fingerprint verification
+
+Magnitude remains primary.
+Irreversibility becomes finite.
+Continuation becomes governed.
+Verification becomes replayable.

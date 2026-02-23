@@ -1,0 +1,7 @@
+SSIL DEMO RUN START 
+CASE: baseline 
+ENV: PYTHONHASHSEED=0 TZ=UTC LC_ALL=C LANG=C 
+PARAMS: H=8 delta_max=0.15 s_max=10.0 beta=0.5 gamma=0.5 wA=0.6 wB=0.2 wS=0.2 eta=0.25 rho=1.0 
+TRACE: traces\trace_demo.csv 
+ENGINE: engine\ssil_engine_v1_2.py 
+CANONICAL_SHA256=b3a7d70e085b5a7289a1c033b83c95dc3c8c8713b301c7401fc1ff07bbb8b839 

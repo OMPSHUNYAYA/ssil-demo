@@ -1,0 +1,40 @@
+CASE_EDGEZERO_NOTE_v1
+
+Purpose
+Record that the demo suite includes an EdgeZero trigger case where SSIL issues ABSTAIN.
+
+Trace file
+traces\trace_edgezero.csv
+
+Run output
+OUT\edgezero_run.csv
+
+Locked hyperparameters
+H = 8
+delta_max = 0.15
+s_max = 10.0
+beta = 0.5
+gamma = 0.5
+wA = 0.6
+wB = 0.2
+wS = 0.2
+eta = 0.25
+rho = 1.0
+Derived: alpha = 1 / H
+
+Observed killer condition (minimum)
+At ticks t = 6..12:
+
+EdgeZero_H = TRUE
+r(t) = E0
+IRR_ADM(t) = ABSTAIN
+
+This demonstrates deterministic EdgeZero boundary detection and continuation gating.
+
+Non-claims
+No prediction
+No optimization
+No equation modification
+This is a structural governance demonstration only.
+
+End of note.

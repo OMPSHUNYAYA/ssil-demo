@@ -1,0 +1,7 @@
+SSIL DEMO RUN START 
+CASE: edgezero 
+ENV: PYTHONHASHSEED=0 TZ=UTC LC_ALL=C LANG=C 
+PARAMS: H=8 delta_max=0.15 s_max=10.0 beta=0.5 gamma=0.5 wA=0.6 wB=0.2 wS=0.2 eta=0.25 rho=1.0 
+TRACE: traces\trace_edgezero.csv 
+ENGINE: engine\ssil_engine_v1_2.py 
+CANONICAL_SHA256=23596beb23014c492e4746156485989b1146cf21ba328f99bc948d2b8111a52e 
