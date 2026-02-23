@@ -1,0 +1,328 @@
+# FAQ — Shunyaya Structural Irreversibility Layer (SSIL)
+
+**Deterministic • Replay-Verifiable • Conservative • Finite Irreversibility Grammar**  
+**No Prediction • No Control • No Equation Modification**
+
+---
+
+# SECTION A — Purpose & Positioning
+
+## A1. What is SSIL, in simple terms?
+
+SSIL (Shunyaya Structural Irreversibility Layer) is a deterministic structural layer that governs whether a system’s continuation remains structurally reversible.
+
+It does not change physics.  
+It does not modify equations.  
+It does not predict outcomes.
+
+It introduces a finite irreversibility grammar over system evolution.
+
+---
+
+## A2. Why is SSIL needed if classical systems already evaluate stability?
+
+Classical systems ask:
+
+- Is the value correct?  
+- Is the equation satisfied?  
+- Is the system stable?  
+
+They do not formally ask:
+
+- Is continuation still structurally reversible?  
+
+SSIL governs that boundary — deterministically.
+
+---
+
+## A3. Does SSIL replace thermodynamics, physics, or domain equations?
+
+No.
+
+SSIL is a conservative extension.
+
+Collapse invariant:
+
+`phi((m,a,s,r)) = m`
+
+Magnitude remains exactly as computed.  
+Domain equations remain untouched.  
+SSIL overlays continuation governance only.
+
+---
+
+## A4. Is SSIL probabilistic or machine-learned?
+
+No.
+
+SSIL:
+
+- Uses a finite discrete regime set  
+- Uses no probability  
+- Performs no statistical inference  
+- Uses no machine learning  
+- Uses no adaptive thresholds  
+
+All behavior is deterministic and replay-verifiable.
+
+---
+
+# SECTION B — Finite Irreversibility Grammar
+
+## B1. What are the irreversibility regimes?
+
+`R = {R0, E0, I1, I2, C}`
+
+Where:
+
+- `R0` — Reversible regime  
+- `E0` — Edge Zero boundary crossing  
+- `I1` — Early irreversible posture  
+- `I2` — Deep irreversible posture  
+- `C` — Committed / terminal irreversible state  
+
+---
+
+## B2. Is the regime set expandable?
+
+No.
+
+`|R| = 5`
+
+No additional runtime regimes are permitted.  
+Expansion invalidates conformance.
+
+---
+
+## B3. What does SSIL evaluate?
+
+Given a structured observation:
+
+`X(t) = (m(t), a(t), s(t))`
+
+SSIL computes:
+
+`X(t) = (m(t), a(t), s(t), r(t))`
+
+Where:
+
+- `m(t)` = classical magnitude  
+- `a(t)` = structural alignment  
+- `s(t)` = accumulated posture  
+- `r(t) ∈ {R0, E0, I1, I2, C}` = irreversibility state  
+
+Magnitude is never modified.
+
+---
+
+# SECTION C — Deterministic Irreversibility Logic
+
+## C1. What is the bounded horizon?
+
+A finite window:
+
+`H >= 1`
+
+Irreversibility decisions use only:
+
+`W_H(t) = {t-H+1, ..., t}`
+
+No infinite memory.  
+No forecasting.  
+No extrapolation.
+
+---
+
+## C2. What is the recovery predicate?
+
+Recovery must be structurally earned within the bounded window.
+
+`Recovery_H(t) ∈ {TRUE, FALSE}`
+
+If recovery conditions fail, reversibility cannot be assumed.
+
+---
+
+## C3. What is EdgeZero?
+
+EdgeZero is a deterministic structural boundary crossing:
+
+`EdgeZero_H(t) ∈ {TRUE, FALSE}`
+
+It occurs when:
+
+- Asymmetry accumulates monotonically  
+- Envelope compresses monotonically  
+- `A(t) > E_rev(t)`  
+- No recovery signature exists  
+
+No probability.  
+No prediction.  
+Pure structural classification.
+
+---
+
+## C4. What is continuation admissibility?
+
+`IRR_ADM(t) ∈ {CONTINUE, ABSTAIN}`
+
+This governs permission to continue under irreversible posture.
+
+It does not modify magnitude.  
+It does not stop equations.  
+It governs continuation reliance only.
+
+---
+
+# SECTION D — Determinism & Replay Identity
+
+## D1. What does replay identity mean?
+
+Two identical executions must produce:
+
+`B_A = B_B`
+
+Byte-identical artifacts.
+
+---
+
+## D2. What artifacts must match?
+
+- State sequences (`r(t)`)  
+- Irreversibility classifications  
+- Output CSV files  
+- SHA-256 manifests  
+
+No tolerance windows are permitted.
+
+---
+
+## D3. Why is randomness prohibited?
+
+Randomness breaks replay identity.
+
+SSIL is execution-deterministic and machine-independent.
+
+---
+
+# SECTION E — What SSIL Prevents
+
+## E1. What problem does SSIL solve?
+
+Without irreversibility governance:
+
+- Systems continue past structural exhaustion  
+- Envelope compression is ignored  
+- Recovery capacity is assumed  
+- Escalation occurs too late  
+
+SSIL enforces deterministic structural restraint.
+
+---
+
+## E2. What does ABSTAIN mean?
+
+ABSTAIN does not mean:
+
+- Failure  
+- Prediction  
+- Instability  
+
+It means:
+
+Continuation is structurally inadmissible under deterministic irreversibility predicates.
+
+---
+
+# SECTION F — Cross-Domain Universality
+
+## F1. Does SSIL apply only to physics?
+
+No.
+
+Any system with:
+
+- Ordered observations  
+- Structural posture accumulation  
+- Reversible envelope concepts  
+
+can be evaluated under SSIL.
+
+---
+
+## F2. Has SSIL been replay-verified?
+
+Yes.
+
+Verified across:
+
+- Recovery traces  
+- Full irreversibility arcs  
+- Envelope starvation adversarial traces  
+- Boundary skating adversarial traces  
+- Multi-parameter sweeps  
+
+All runs satisfy:
+
+`phi((m,a,s,r)) = m`  
+`IRR_ADM(t) ∈ {CONTINUE, ABSTAIN}`  
+`B_A = B_B`
+
+Determinism is demonstrated — not assumed.
+
+---
+
+# SECTION G — Scope & Non-Claims
+
+## G1. What SSIL does NOT claim
+
+SSIL does not:
+
+- Predict failure  
+- Replace thermodynamics  
+- Replace domain equations  
+- Optimize performance  
+- Inject control signals  
+- Guarantee safety outcomes  
+
+It governs continuation admissibility only.
+
+---
+
+## G2. Is SSIL a safety certification?
+
+No.
+
+“Civilization-grade” refers strictly to deterministic verification discipline:
+
+- Finite regime grammar  
+- Deterministic predicates  
+- Conservative collapse invariant  
+- Replay-verifiable artifacts  
+
+Independent regulatory certification is required for safety-critical deployment.
+
+---
+
+# SECTION H — Architectural Summary
+
+Layered view:
+
+- Classical Layer → Magnitude evolution  
+- Structural Layer → Alignment & posture  
+- Irreversibility Layer → `R = {R0, E0, I1, I2, C}`  
+- Admissibility Layer → `IRR_ADM(t)`
+
+All collapse through:
+
+`phi((m,a,s,r)) = m`
+
+Magnitude remains primary.  
+Irreversibility becomes finite.  
+Continuation becomes governed.
+
+---
+
+# ONE-LINE SUMMARY
+
+Shunyaya Structural Irreversibility Layer (SSIL) introduces a deterministic finite irreversibility grammar `R = {R0, E0, I1, I2, C}` over system evolution, preserving classical magnitude exactly via `phi((m,a,s,r)) = m` while governing continuation admissibility through bounded, replay-verifiable structural predicates across domains.
